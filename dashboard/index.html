@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <title>Idea Discovery</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>داشبورد کشف ایده‌ها</h1>
+</header>
+
+<div class="container">
+
+  <!-- Left Panel -->
+  <div class="panel">
+
+    <input id="search" placeholder="جستجوی ایده..." />
+
+    <select id="category">
+      <option value="">همه دسته‌ها</option>
+    </select>
+
+    <select id="status">
+      <option value="">همه وضعیت‌ها</option>
+      <option value="discovered">کشف‌شده</option>
+      <option value="researching">در حال بررسی</option>
+      <option value="validated">تأیید شده</option>
+      <option value="discarded">رد شده</option>
+    </select>
+
+    <div id="list"></div>
+
+  </div>
+
+  <!-- Right Panel -->
+  <div class="panel detail" id="detail">
+    <h2>یک ایده را انتخاب کنید</h2>
+  </div>
+
+</div>
+
+<script src="./app.js"></script>
+
+</body>
+</html>
